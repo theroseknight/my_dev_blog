@@ -1,0 +1,16 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">  
+        <div class="container-fluid">
+                <div class="navbar-header" href="#">
+                        <a class="navbar-brand" href="#">Blog</a>
+                </div>
+                <ul class="nav navbar-nav">
+                  <li>{{#link-to 'posts'}}Posts{{/link-to}}</li>
+                  <li>{{#link-to 'posts.new'}}Add New Post{{/link-to}}</li>
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+
+                </ul>
+        </div>
+</nav>  
+{{outlet}}
