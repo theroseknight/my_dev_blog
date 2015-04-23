@@ -1,4 +1,6 @@
-
+body {
+	font-family: 'Abel', sans-serif;
+}
 .main-contain {
 	display:table;
   padding-left:0px;
@@ -18,9 +20,9 @@
   float:none;
 }
 
-.side-panel {	
+.side-panel {
 	vertical-align: top;
-	background-color: #C6E8FF;
+	background-color: #303538;
 	display:table-cell;
   float:none;
   padding-left: 0px;
@@ -41,12 +43,19 @@
 }
 
 #left-nav-buttons > li > a {
-	color: #420082;
+	color: white;
 }
 
 #left-nav-buttons > li > a:hover {
 	background-color: #e7e7e7;
+	color: #420082;
 }
+
+#left-nav-buttons > li > a:focus {
+	background-color: #e7e7e7;
+	color: #420082;
+}
+
 
 #right-panel {
 	box-shadow: 0px 2px 5px #888888;
@@ -67,7 +76,7 @@
 }
 .round img {
    display: block;
-/* Stretch 
+/* Stretch
       height: 100%;
       width: 100%; */
 	width: 100%;
@@ -77,19 +86,39 @@
 
 #name-text {
 	margin-top: 5px;
-	color: #420082;
+	color: white;
 	margin-bottom: 0px;
+	font-family: 'Indie Flower', cursive;
 }
 
 #name-flair {
-	color: #420082;
+	color: white;
 	font-style: italic;
 	margin-top:0px;
+	font-family: 'Indie Flower', cursive;
+	font-size: 20px;
 }
 
 #flavor-text {
-	color: #420082;
+	color: white;
 	padding-top: 20px;
 	padding-right: 20px;
 	text-align: justify;
+}
+
+.post-title {
+	font-size: 40px;
+	color: #420082;
+}
+
+.post-title:hover, .post-footer:hover {
+	color: black;
+}
+
+.post-footer {
+	color: #420082;
+}
+
+#post-date {
+	margin-top: 0px;
 }

@@ -10,7 +10,7 @@ module.exports = function(environment) {
     contentSecurityPolicy: {
               'default-src': "'none'",
               'script-src': "'self' 'unsafe-inline' 'unsafe-eval'",
-              'font-src': "'self'",
+              'font-src': "'self' http://fonts.gstatic.com/s/abel/v6/brdGGFwqYJxjg2CD1E9o7g.woff2 http://fonts.gstatic.com/s/indieflower/v7/10JVD_humAd5zP2yrFqw6ugdm0LZdjqr5-oayXSOefg.woff2",
               'connect-src': "'self' wss://s-dal5-nss-34.firebaseio.com/.ws?v=5&ns=my-dev-blog",
               'img-src': "'self'",
               'report-uri':"'localhost'",

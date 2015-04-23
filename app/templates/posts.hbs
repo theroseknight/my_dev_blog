@@ -1,14 +1,16 @@
-{{render "left-panel"}}
-
-<div class="col-xs-9 main-panel">
-	<div class="row">  
-    <div class="col-md-4">
-      <h1>Posts</h1>
-      {{#each p in model}}
-      	<br>{{#link-to 'posts.edit' p.id}} {{p.title}}{{/link-to}}
-      {{/each}}
-    </div>
-	  {{outlet}}
-	</div> 
+<div class="row">
+  <div class="col-xs-12">
+		<br>
+		<br>
+    {{#each post in model}}
+    	{{#link-to 'post' post.id classNames="post-title"}} {{post.title}}{{/link-to}}
+			<h5 id="post-date">{{format-date post.date}} on {{format-date-two post.date}}</h5>
+			<h3>{{post.description}}</h3>
+			{{#link-to 'post' post.id classNames="post-footer"}}View Full Post/Leave Comment (# of comments){{/link-to}}
+			<br>
+			<br>
+			<br>
+    {{/each}}
+  </div>
+  {{outlet}}
 </div>
-{{render "right-panel"}}
