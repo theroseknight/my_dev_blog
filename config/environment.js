@@ -11,7 +11,7 @@ module.exports = function(environment) {
               'default-src': "'none'",
               'script-src': "'self' 'unsafe-inline' 'unsafe-eval'",
               'font-src': "'self'",
-              'connect-src': "'self' wss://s-dal5-nss-27.firebaseio.com/.ws?v=5&ns=vivid-fire-5623",
+              'connect-src': "'self' wss://s-dal5-nss-34.firebaseio.com/.ws?v=5&ns=my-dev-blog",
               'img-src': "'self'",
               'report-uri':"'localhost'",
               'style-src': "'self' 'unsafe-inline'",
