@@ -1,5 +1,9 @@
 <div class="container-fluid main-contain">
 	<div class="row main-row">
-		{{outlet}}
+		{{render "left-panel"}}
+		<div class="col-xs-9 main-panel">
+			{{outlet}}
+		</div>
+		{{render "right-panel"}}
 	</div>
 </div>

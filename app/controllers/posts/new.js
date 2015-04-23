@@ -1,7 +1,8 @@
 import Ember from 'ember';
 
-export default Ember.Controller.extend({  
-actions: {  
+export default Ember.Controller.extend({
+names:["Web Development", "Game Development", "Entertainment Review", "Random Thought", "Project"],    
+actions: {
         save: function() {
                 var title = this.get('title');
                 var description= this.get('description');
