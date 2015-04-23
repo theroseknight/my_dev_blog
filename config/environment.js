@@ -10,11 +10,11 @@ module.exports = function(environment) {
     contentSecurityPolicy: {
               'default-src': "'none'",
               'script-src': "'self' 'unsafe-inline' 'unsafe-eval'",
-              'font-src': "'self' http://fonts.gstatic.com/s/abel/v6/brdGGFwqYJxjg2CD1E9o7g.woff2 http://fonts.gstatic.com/s/indieflower/v7/10JVD_humAd5zP2yrFqw6ugdm0LZdjqr5-oayXSOefg.woff2",
+              'font-src': "'self' http://fonts.gstatic.com/s/abel/v6/brdGGFwqYJxjg2CD1E9o7g.woff2 http://fonts.gstatic.com/s/indieflower/v7/10JVD_humAd5zP2yrFqw6ugdm0LZdjqr5-oayXSOefg.woff2 http://fonts.gstatic.com/s/monofett/v6/B5kbLBv_e4xu3btOMFc8LfesZW2xOQ-xsNqO47m55DA.woff2",
               'connect-src': "'self' wss://s-dal5-nss-34.firebaseio.com/.ws?v=5&ns=my-dev-blog",
               'img-src': "'self'",
               'report-uri':"'localhost'",
-              'style-src': "'self' 'unsafe-inline'",
+              'style-src': "'self' 'unsafe-inline' http://fonts.googleapis.com/css?family=Indie+Flower http://fonts.googleapis.com/css?family=Abel http://fonts.googleapis.com/css?family=Monofett",
               'frame-src': "'none'"
     },
     EmberENV: {

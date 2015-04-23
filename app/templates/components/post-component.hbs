@@ -1,0 +1,7 @@
+{{#link-to 'post' post.id classNames="post-title"}} {{post.title}}{{/link-to}}
+<h5 id="post-date">{{format-date post.date}} on {{format-date-two post.date}}</h5>
+<h3>{{post.description}}</h3>
+{{#link-to 'post' post.id classNames="post-footer"}}View Full Post/Leave Comment (# of comments){{/link-to}}
+<br>
+<br>
+<br>
