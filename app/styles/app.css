@@ -68,11 +68,12 @@ body {
 }
 
 .round {
-  border-radius: 50%;
+	margin-top: 30px;
   overflow: hidden;
   width: 175px;
   height: 175px;
-  margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 .round img {
    display: block;
