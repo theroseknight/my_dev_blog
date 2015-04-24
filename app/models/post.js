@@ -9,6 +9,6 @@ export default DS.Model.extend({
   gameDevelopment: DS.attr('boolean'),
   movieReview: DS.attr('boolean'),
   randomThought: DS.attr('boolean'),
-  project: DS.attr('boolean')
+  writing: DS.attr('boolean')
 
 });

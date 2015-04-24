@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
-names:["Web Development", "Game Development", "Entertainment Review", "Random Thought", "Project"],    
+names:["Web Development", "Game Development", "Entertainment Review", "Random Thought", "Writing"],
 actions: {
   save: function() {
     var title = this.get('title');
@@ -12,7 +12,7 @@ actions: {
     var gameDev = false;
     var movieRev = false;
     var random = false;
-    var projects = false;
+    var writings = false;
 
     switch(blogType) {
     	case "Web Development":
@@ -27,8 +27,8 @@ actions: {
 	    case "Random Thought":
 	    	random = true;
 	    	break;
-	    case "Project":
-	    	projects = true;
+	    case "Writing":
+	    	writings = true;
 	    	break;
     }
 
@@ -42,7 +42,7 @@ actions: {
       gameDevelopment:gameDev,
       movieReview:movieRev,
       randomThought:random,
-      project:projects
+      writing:writings
     });
     this.set('title','');
     this.set('description','');
