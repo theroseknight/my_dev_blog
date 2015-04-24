@@ -36,5 +36,8 @@
     "emberfire": "^1.4.4",
     "firebase": "^2.2.4",
     "moment": "^2.10.2"
+  },
+  "dependencies": {
+    "ember-disqus": "^0.1.1"
   }
 }

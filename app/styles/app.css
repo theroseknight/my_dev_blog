@@ -18,6 +18,8 @@ body {
 	box-shadow: 2px 2px 5px #888888;
 	display:table-cell;
   float:none;
+	padding-left: 75px;
+	padding-right: 75px;
 }
 
 .side-panel {
@@ -123,4 +125,19 @@ body {
 
 #post-date {
 	margin-top: 0px;
+}
+
+.post-summarized {
+	max-width: 750px;
+	max-height: 105px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.post-summarized p {
+	text-align: justify;
+}
+
+.post-body-text p {
+	text-align: justify;
 }

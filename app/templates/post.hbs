@@ -1,6 +1,14 @@
-<h1 class="post-title">{{model.title}}</h1>
-<h5 id="post-date">{{format-date model.date}} on {{format-date-two model.date}}</h5>
-<h3>{{model.description}}</h3>
-<br>
-<br>
-<br>{{#link-to 'post.edit' model.id}}Edit{{/link-to}}
+<div class="post-holder">
+  <h1 class="post-title">{{model.title}}</h1>
+  <h5 id="post-date">{{format-date model.date}} on {{format-date-two model.date}}</h5>
+  <h3 class="post-body-text">{{markdown-to-html markdown=model.description}}</h3>
+  <br>
+  <br>
+  <br>{{#link-to 'post.edit' model.id}}Edit{{/link-to}}
+
+  {{outlet}}
+
+  <div class="disqis-holder">
+    {{disqus-comments identifier=model.title}}
+  </div>
+</div>

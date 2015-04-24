@@ -4,10 +4,11 @@ export default Ember.Controller.extend({
 
   actions: {
         save: function() {
-                var d = this.get('model');
-                d.set("date",new Date());
-                d.save();
-                this.set('isEditing', false);
+          console.log("here")
+            var d = this.get('model');
+            d.set("date",new Date());
+            d.save();
+            this.set('isEditing', false);
 
         },
         del: function() {
