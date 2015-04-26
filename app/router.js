@@ -28,5 +28,5 @@ export default Router.map(function() {
   this.resource("post",{path:"post/:post_id"},function(){
     this.route("edit");
   })
-
+  this.route('login')
 });

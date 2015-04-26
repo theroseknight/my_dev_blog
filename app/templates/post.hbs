@@ -4,7 +4,9 @@
   <h3 class="post-body-text">{{markdown-to-html markdown=model.description}}</h3>
   <br>
   <br>
-  <br>{{#link-to 'post.edit' model.id}}Edit{{/link-to}}
+  {{#if session.isAuthenticated}}
+    <br>{{#link-to 'post.edit' model.id}}Edit{{/link-to}}
+  {{/if}}
 
   {{outlet}}
 

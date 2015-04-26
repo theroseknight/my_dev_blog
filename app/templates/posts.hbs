@@ -2,7 +2,8 @@
   <div class="col-xs-12">
 		<br>
 		<br>
-    {{#each post in model}}
+		{{outlet}}
+    {{#each post in orderedPosts}}
     	{{#link-to 'post.index' post.id classNames="post-title"}} {{post.title}}{{/link-to}}
 			<h5 id="post-date">{{format-date post.date}} on {{format-date-two post.date}}</h5>
 			<h3 class="post-summarized">{{markdown-to-html markdown=post.description}}</h3>
@@ -14,5 +15,5 @@
 			<br>
     {{/each}}
   </div>
-  {{outlet}}
+  
 </div>

@@ -7,7 +7,9 @@
 	    <li>{{#link-to 'movies-shows'}}Movie/Show Reviews{{/link-to}}</li>
 	    <li>{{#link-to 'random-thoughts'}}Random Thoughts{{/link-to}}</li>
 	    <li>{{#link-to 'writings'}}Writings{{/link-to}}</li>
-			<li>{{#link-to 'posts.new'}}New{{/link-to}}</li>
+	    {{#if session.isAuthenticated}}
+				<li>{{#link-to 'posts.new'}}New{{/link-to}}</li>
+			{{/if}}
 	  </ul>
 	</div>
 </div>
