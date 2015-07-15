@@ -10,5 +10,4 @@ export default DS.Model.extend({
   movieReview: DS.attr('boolean'),
   randomThought: DS.attr('boolean'),
   writing: DS.attr('boolean')
-
 });

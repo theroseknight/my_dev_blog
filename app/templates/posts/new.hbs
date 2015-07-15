@@ -7,7 +7,7 @@
     <dt>Title:<br> {{textarea value=title cols="80" rows="1"}}</dt>
     <dt>Description:<br> {{textarea value=description cols="80" rows="6"}}</dt>
     </dl>
-    {{view "select" content=names value=blogType}}
+    {{blog-type-selector action="blogSelectorAction"}}
     <button type="submit" class="btn btn-primary">Add</button>
     </form>
 </div>

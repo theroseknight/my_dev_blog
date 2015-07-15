@@ -1,5 +1,5 @@
 {
-  "firebase": "my-dev-blog",
+  "firebase": "theroseknight",
   "public": "dist/",
   "ignore": [
     "firebase.json",

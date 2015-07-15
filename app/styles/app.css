@@ -9,7 +9,6 @@ body {
 
 .main-row {
 	display:table-row;
-	min-height: 1000px;
 }
 
 .main-panel {
@@ -32,10 +31,6 @@ body {
   padding-bottom: 0px;
 }
 
-#left-panel {
-	box-shadow: 1px 2px 5px #888888;
-}
-
 #left-nav-buttons {
 	text-align: center;
 }
@@ -54,6 +49,26 @@ body {
 }
 
 #left-nav-buttons > li > a:focus {
+	background-color: #e7e7e7;
+	color: #420082;
+}
+
+#left-nav-buttons > li > button {
+	color: white;
+	padding-top:15px;
+	padding-bottom: 15px;
+	-webkit-appearance: none;
+	background-color: transparent;
+	border: none;
+	width: 100%;
+}
+
+#left-nav-buttons > li > button:hover {
+	background-color: #e7e7e7;
+	color: #420082;
+}
+
+#left-nav-buttons > li > button:focus {
 	background-color: #e7e7e7;
 	color: #420082;
 }

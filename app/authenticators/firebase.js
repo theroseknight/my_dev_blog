@@ -5,13 +5,12 @@ import config from '../config/environment';
 export default Base.extend({
 
     init: function() {
-        if (config.firebase) {
-            this.set('firebase', new Firebase(config.firebase));
-        } else {
-            throw new Error("'firebase' not defined in environment");
-        }
-
-        this._super();
+      if (config.firebase) {
+        this.set('firebase', new Firebase(config.firebase));
+      } else {
+        throw new Error("'firebase' not defined in environment");
+      }
+      this._super();
     },
     firebase: null,
     restore: function(data) {

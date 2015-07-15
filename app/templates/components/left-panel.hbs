@@ -1,0 +1,12 @@
+<div class="col-xs-1 side-panel" id="left-panel">
+	<div id="left-panel-content">
+		<ul class="nav navbar-nav" id="left-nav-buttons">
+			{{#each linkObjects as |linkObject|}}
+				<li><button {{action "newFilterSelected" linkObject.filter}}>{{linkObject.label}}</button></li>
+			{{/each}}
+	    {{#if session.isAuthenticated}}
+				<li>{{#link-to 'posts.new'}}New{{/link-to}}</li>
+			{{/if}}
+	  </ul>
+	</div>
+</div>
